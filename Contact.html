@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>Hey Guys, I am Sahil, these are my Contact details</h1>
+  <p>Email ID : Sahil.sharma@reconnectenergy.com</p>
+  <p>Phone number : 836094****</p>
+  <p>Send me your Queries</p>
+
+  <h1> without using tables</h1>
+  <hr>
+  <br>
+  <form>
+    <label>Name : </label> <input type="text"> <br><br>
+    <label>Gender : </label> <input type="radio">Male <input type="radio">Female<br><br>
+    <label>Your Favorate Color: </label> <input type="color"><br><br>
+    <label>Date of Birth:</label><input type="date"><br><br>
+    <label>Email ID:</label><input type="email"><br><br>
+    <label>Upload adharcard:</label><input type="file"><br><br>
+    <label>Rate this Course:</label><input type="range"><br><br>
+    <input type="reset"><input type="submit"><br><br>
+  </form>
+  <hr>
+  <br>
+  <h2> with tables</h2>
+  <hr>
+  <br>
+
+  <form action="userData.html" method="get" enctype="text/plain">
+    <table>
+      <tr>
+        <td><label>Name : </label></td>
+        <td><input type="text" name="name" id="name" required></td>
+      </tr>
+
+      <tr>
+        <td><label>Gender : </label></td>
+        <td><input name="gender" id="gender" value="male" type="radio" required>Male
+            <input name="gender" id="gender" value="female" type="radio" required>Female</td>
+      </tr>
+      <tr>
+        <td><label>Your Favorate Color: </label></td>
+        <td><input name="color" id="color" type="color" required></td>
+      </tr>
+
+      <tr>
+        <td><label>Date of Birth:</label></td>
+        <td><input name="dob" id="dob" type="date" required></td>
+      </tr>
+
+      <tr>
+        <td><label>Email ID: </label></td>
+        <td><input name="email" id="email" type="email" required></td>
+      </tr>
+      <tr>
+        <td><label>Upload Adharcard:</label></td>
+        <td><input name="fileName" id="fileName" type="file" required/></td>
+      </tr>
+      <tr>
+        <td><label>Rate this Course</label></td>
+        <td><input  name="rating" id="rating" type="range" required/></td>
+      </tr>
+
+      <tr>
+        <td><input type="reset" /></td>
+        <td><input type="submit" /></td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+
+</html>
